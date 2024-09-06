@@ -1,0 +1,78 @@
+.data
+res: .space 4096
+
+.macro readInt(%ad)
+	li $v0, 5
+	syscall
+	move %ad, $v0
+.end_macro
+
+.macro printInt(%ad)
+	move $a0, %ad
+	li $v0, 1
+	syscall
+.end_macro
+
+.macro getIndex(%res, %i)
+	move %res, %i
+	sll %res, %res, 2
+.end_macro
+
+.text
+li $s2, 10
+
+readInt($s0) # $s0 = n
+li $s1, 1 # $s1 = l = 1
+li $t0, 1
+sw $t0, res($zero)
+
+li $t0, 2 # $t0 = i
+solve_loop:
+bgt $t0, $s0, solve_loop_end
+	
+	li $t2, 0 # $t2 = overflow
+	li $t1, 0 # $t1 = j
+	calc_loop:
+	beq $t1, $s1, calc_loop_end
+		
+		getIndex($t3, $t1)
+		lw $t4, res($t3) # $t4 = res[j]
+		mul $t4, $t0, $t4 # $t4 *= i
+		add $t2, $t2, $t4 # overflow += res[j] * i
+		div $t2, $s2
+		mfhi $t5
+		sw $t5, res($t3) # res[j] = overflow % 10
+		mflo $t2
+		
+	addi $t1, $t1, 1
+	j calc_loop
+	calc_loop_end:
+	
+	overflow_loop:
+	beq $t2, 0, overflow_loop_end
+		
+		div $t2, $s2
+		getIndex($t3, $s1)
+		mfhi $t4
+		sw $t4, res($t3)
+		addi $s1, $s1, 1
+		mflo $t2
+		
+	j overflow_loop
+	overflow_loop_end:
+	
+addi $t0, $t0, 1
+j solve_loop
+solve_loop_end:
+
+subi $t0, $s1, 1
+print_loop:
+blt $t0, 0, print_loop_end
+	
+	getIndex($t1, $t0)
+	lw $t1, res($t1)
+	printInt($t1)
+	
+subi $t0, $t0, 1
+j print_loop
+print_loop_end:

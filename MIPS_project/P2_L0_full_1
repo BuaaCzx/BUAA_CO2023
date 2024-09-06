@@ -1,0 +1,104 @@
+.data
+vis: .space 32 # int vis[8]
+res: .space 32 # int res[8]
+endl: .asciiz "\n"
+space: .asciiz " "
+
+.macro readInt(%ad)
+	li $v0, 5
+	syscall
+	move %ad, $v0
+.end_macro
+
+.macro printInt(%ad)
+	li $v0, 1
+	move $a0, %ad
+	syscall
+.end_macro
+
+.macro printStr(%ad)
+	li $v0, 4
+	la $a0, %ad
+	syscall
+.end_macro
+
+.macro push(%ad)
+	sw %ad, ($sp)
+	subi $sp, $sp, 4
+.end_macro
+
+.macro pop(%ad)
+	addi $sp, $sp, 4
+	lw %ad, ($sp)
+.end_macro
+
+.macro getIndex(%res, %i)
+	move %res, %i
+	sll %res, %res, 2
+.end_macro
+
+.text
+li $s1, 1
+readInt($s0)
+li $a0, 0
+jal dfs
+li $v0, 10
+syscall
+
+dfs:
+# push stack
+push($ra)
+push($t0)
+push($t1)
+push($t2)
+push($t3)
+push($t4)
+push($a0)
+# get $a
+move $t0, $a0
+
+# do sth.
+beq $t0, $s0, print
+	li $t1, 1
+	loop:
+	bgt $t1, $s0, loop_end
+		getIndex($t2, $t1)
+		lw $t2, vis($t2)
+		beq $t2, 1, vis_not_0
+			getIndex($t3, $t0)
+			sw $t1, res($t3)
+			getIndex($t2, $t1)
+			sw $s1, vis($t2)
+			addi $a0, $t0, 1
+			jal dfs
+			sw $zero, vis($t2)
+		vis_not_0:
+	addi $t1, $t1, 1
+	j loop
+	loop_end:
+	j return
+print:
+	li $t1, 0
+	print_loop:
+	beq $t1, $s0, print_loop_end
+		getIndex($t2, $t1)
+		lw $t2, res($t2)
+		printInt($t2)
+		printStr(space)
+	addi $t1, $t1, 1
+	j print_loop
+	print_loop_end:
+	printStr(endl)
+	j return
+return:
+# pop
+pop($a0)
+pop($t4)
+pop($t3)
+pop($t2)
+pop($t1)
+pop($t0)
+pop($ra)
+
+# go back
+jr $ra

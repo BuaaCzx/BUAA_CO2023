@@ -1,0 +1,55 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Hihiczx/Documents/ISE Project/P5/test_isim_beh.exe -prj C:/Users/Hihiczx/Documents/ISE Project/P5/test_beh.prj work.test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/ControlUnitDecode.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/Register_W.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/Register_M.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/Register_E.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/RegisterD.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/ProgramCounter.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/InstructionRegister.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/GRF.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/DataMemory.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/ControlUnit_W.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/ControlUnit_M.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/ControlUnit_E.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/ControlUnit_D.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/CMP.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/mips.v" into library work
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P5/mips.v" Line 280: <_W_PC> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P5/mips.v" Line 285: <_W_reg_write_enable> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P5/mips.v" Line 288: <_W_reg_write_address> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P5/mips.v" Line 289: <_W_reg_write_data> is already implicitly declared earlier.
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P5/test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Hihiczx/Documents/ISE Project/P5/mips.v" Line 264: Size mismatch in connection of port <reg_write_enable_in>. Formal port size is 32-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Hihiczx/Documents/ISE Project/P5/mips.v" Line 266: Size mismatch in connection of port <reg_write_enable_out>. Formal port size is 32-bit while actual signal size is 1-bit.
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module InstructionRegister
+Compiling module Register_D
+Compiling module ControlUnitDecode
+Compiling module ControlUnit_D
+Compiling module GRF
+Compiling module CMP
+Compiling module Register_E
+Compiling module ControlUnit_E
+Compiling module ALU
+Compiling module Register_M
+Compiling module ControlUnit_M
+Compiling module DataMemory
+Compiling module Register_W
+Compiling module ControlUnit_W
+Compiling module mips
+Compiling module test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 18 Verilog Units
+Built simulation executable C:/Users/Hihiczx/Documents/ISE Project/P5/test_isim_beh.exe
+Fuse Memory Usage: 36680 KB
+Fuse CPU Usage: 2859 ms

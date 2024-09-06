@@ -1,0 +1,57 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Hihiczx/Documents/ISE Project/P6/mips_txt_isim_beh.exe -prj C:/Users/Hihiczx/Documents/ISE Project/P6/mips_txt_beh.prj work.mips_txt work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnitDecode.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/Register_W.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/Register_M.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/Register_E.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/RegisterD.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ProgramCounter.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/MultDiv.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/GRF.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_W.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_M.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_E.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_D.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/CMP.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ByteExtendForStore.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ByteExtendForLoad.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" into library work
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 342: <_W_PC> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 347: <_W_reg_write_enable> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 350: <_W_reg_write_address> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 351: <_W_reg_write_data> is already implicitly declared earlier.
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P6/mips_tb.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_M.v" Line 55: Port mult is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_W.v" Line 55: Port mult is not connected to this instance
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module Register_D
+Compiling module ControlUnitDecode
+Compiling module ControlUnit_D
+Compiling module GRF
+Compiling module CMP
+Compiling module Register_E
+Compiling module ControlUnit_E
+Compiling module ALU
+Compiling module MultDiv
+Compiling module Register_M
+Compiling module ControlUnit_M
+Compiling module ByteExtendForStore
+Compiling module ByteExtendForLoad
+Compiling module Register_W
+Compiling module ControlUnit_W
+Compiling module mips
+Compiling module mips_txt
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 19 Verilog Units
+Built simulation executable C:/Users/Hihiczx/Documents/ISE Project/P6/mips_txt_isim_beh.exe
+Fuse Memory Usage: 33916 KB
+Fuse CPU Usage: 765 ms

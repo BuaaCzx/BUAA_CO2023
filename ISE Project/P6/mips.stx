@@ -1,0 +1,94 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Hihiczx/Documents/ISE Project/P6/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.75 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Hihiczx/Documents/ISE Project/P6/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.75 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ControlUnitDecode.v" into library work
+Parsing module <ControlUnitDecode>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\Register_W.v" into library work
+Parsing module <Register_W>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\Register_M.v" into library work
+Parsing module <Register_M>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\Register_E.v" into library work
+Parsing module <Register_E>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\RegisterD.v" into library work
+Parsing module <Register_D>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ProgramCounter.v" into library work
+Parsing module <ProgramCounter>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\GRF.v" into library work
+Parsing module <GRF>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ControlUnit_W.v" into library work
+Parsing module <ControlUnit_W>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ControlUnit_M.v" into library work
+Parsing module <ControlUnit_M>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ControlUnit_E.v" into library work
+Parsing module <ControlUnit_E>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ControlUnit_D.v" into library work
+Parsing module <ControlUnit_D>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\CMP.v" into library work
+Parsing module <CMP>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ByteExtend.v" into library work
+Parsing module <ByteExtend>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\ALU.v" into library work
+Parsing module <ALU>.
+Analyzing Verilog file "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" into library work
+Parsing module <mips>.
+ERROR:HDLCompiler:661 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 44: Non-net port clk cannot be of mode input
+ERROR:HDLCompiler:661 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 45: Non-net port reset cannot be of mode input
+ERROR:HDLCompiler:661 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 46: Non-net port i_inst_rdata cannot be of mode input
+ERROR:HDLCompiler:661 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 47: Non-net port m_data_rdata cannot be of mode input
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 76: Target <i_inst_addr> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 152: Target <w_grf_we> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 153: Target <w_grf_addr> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 154: Target <w_grf_wdata> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 155: Target <w_inst_addr> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 312: Target <m_data_addr> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 313: Target <m_data_wdata> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 314: Target <m_inst_addr> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:329 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 315: Target <m_data_byteen> of concurrent assignment or output port connection should be a net type.
+ERROR:HDLCompiler:598 - "C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v" Line 43: Module <mips> ignored due to previous errors.
+Verilog file C:\Users\Hihiczx\Documents\ISE Project\P6\mips.v ignored due to errors
+--> 
+
+Total memory usage is 4461668 kilobytes
+
+Number of errors   :   14 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

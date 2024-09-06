@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 342: &lt;<arg fmt="%s" index="1">_W_PC</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 347: &lt;<arg fmt="%s" index="1">_W_reg_write_enable</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 350: &lt;<arg fmt="%s" index="1">_W_reg_write_address</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P6/mips.v" Line 351: &lt;<arg fmt="%s" index="1">_W_reg_write_data</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_M.v" Line 55: Port <arg fmt="%s" index="1">mult</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P6/ControlUnit_W.v" Line 55: Port <arg fmt="%s" index="1">mult</arg> is not connected to this instance
+</msg>
+
+</messages>
+

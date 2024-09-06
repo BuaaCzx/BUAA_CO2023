@@ -1,0 +1,169 @@
+# int n, m, matrix[8][8], stx, sty, edx, edy, res, vis[8][8];
+# const int dx[4] = {1, -1, 0, 0}, dy[4] = {0, 0, 1, -1};
+.data
+matrix: .space 256
+vis: .space 256
+dx: .space 16
+dy: .space 16
+
+.macro readInt(%ad)
+	li $v0, 5
+	syscall
+	move %ad, $v0
+.end_macro
+
+.macro printInt(%ad)
+	li $v0, 1
+	move $a0, %ad
+	syscall
+.end_macro
+
+.macro getIndex(%res, %i, %j) # res = 4 * (i * 8 + j)
+	sll %res, %i, 3
+	add %res, %res, %j
+	sll %res, %res, 2
+.end_macro
+
+.macro push(%ad)
+	sw %ad, ($sp)
+	subi $sp, $sp, 4
+.end_macro
+
+.macro pop(%ad)
+	addi $sp, $sp, 4
+	lw %ad, ($sp)
+.end_macro
+
+.macro init(%array, %index, %value)
+	li $t0, %value
+	li $t1, %index
+	getIndex($t2, $zero, $t1)
+	sw $t0, %array($t2)
+.end_macro
+
+.text
+
+li $s7, 1
+
+init(dx, 0, 1)
+init(dx, 1, -1)
+init(dx, 2, 0)
+init(dx, 3, 0)
+
+init(dy, 0, 0)
+init(dy, 1, 0)
+init(dy, 2, 1)
+init(dy, 3, -1)
+
+readInt($s0) # $s0 = n
+readInt($s1) # $s1 = m
+
+li $t0, 1
+read_loop1:
+bgt $t0, $s0, read_loop1_end
+	
+	li $t1, 1
+	read_loop2:
+	bgt $t1, $s1, read_loop2_end
+		
+		readInt($t2)
+		getIndex($t3, $t0, $t1)
+		sw $t2, matrix($t3) # matrix[i][j] = read()
+		
+	addi $t1, $t1, 1
+	j read_loop2
+	read_loop2_end:
+	
+addi $t0, $t0, 1
+j read_loop1
+read_loop1_end:
+
+readInt($a0) # $a0 = stx
+readInt($a1) # $a1 = sty
+
+getIndex($t0, $a0, $a1)
+sw $s7, vis($t0)
+
+readInt($s2) # $s2 = edx
+readInt($s3) # $s3 = edy
+
+li $s4, 0 # $s4 = res
+jal dfs
+printInt($s4)
+
+li $v0, 10
+syscall
+
+dfs:
+# push stack
+
+push($ra)
+push($t0)
+push($t1)
+push($t2)
+push($t3)
+push($t4)
+push($t5)
+push($t6)
+push($t7)
+
+
+# move a
+
+move $t0, $a0
+move $t1, $a1
+
+# do sth.
+bne $t0, $s2, not_arrive
+	bne $t1, $s3, not_arrive
+		addi $s4, $s4, 1
+		j return
+
+not_arrive:
+li $t2, 0
+loop:
+beq $t2, 4, loop_end
+	
+	getIndex($t3, $zero, $t2)
+	lw $t3, dx($t3) # $t3 = dx[i]
+	getIndex($t4, $zero, $t2)
+	lw $t4, dy($t4) # $t4 = dy[i]
+	
+	add $t3, $t0, $t3 # $t3 = dx[i] + x
+	add $t4, $t1, $t4 # $t4 = dy[i] + y
+	
+	getIndex($t5, $t3, $t4)
+	lw $t6, vis($t5)
+	lw $t7, matrix($t5)
+	
+	blt $t3, 1, else
+		bgt $t3, $s0, else
+			blt $t4, 1, else
+				bgt $t4, $s1, else
+					beq $t6, 1, else
+						beq $t7, 1, else
+							sw $s7, vis($t5)
+							move $a0, $t3
+							move $a1, $t4
+							jal dfs
+							sw $zero, vis($t5)
+	
+	else:
+addi $t2, $t2, 1
+j loop
+loop_end:
+
+return:
+# pop stack
+
+pop($t7)
+pop($t6)
+pop($t5)
+pop($t4)
+pop($t3)
+pop($t2)
+pop($t1)
+pop($t0)
+pop($ra)
+#return
+jr $ra

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Hihiczx/Documents/ISE Project/P1_L2_intcheck/intcheckTest_isim_beh.exe" -prj "C:/Users/Hihiczx/Documents/ISE Project/P1_L2_intcheck/intcheckTest_beh.prj" "work.intcheckTest" "work.glbl" 

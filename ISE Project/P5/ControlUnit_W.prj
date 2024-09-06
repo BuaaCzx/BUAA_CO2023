@@ -1,0 +1,2 @@
+verilog work "ControlUnitDecode.v"
+verilog work "ControlUnit_W.v"

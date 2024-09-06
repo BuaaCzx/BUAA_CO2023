@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Hihiczx/Documents/ISE Project/mips/mipsTest_isim_beh.exe -prj C:/Users/Hihiczx/Documents/ISE Project/mips/mipsTest_beh.prj work.mipsTest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/ProgramCounter.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/InstructionRegister.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/GRF.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/DataMemory.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/ControlUnit.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/mips.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/mips/mipsTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module InstructionRegister
+Compiling module ControlUnit
+Compiling module GRF
+Compiling module ALU
+Compiling module DataMemory
+Compiling module mips
+Compiling module mipsTest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable C:/Users/Hihiczx/Documents/ISE Project/mips/mipsTest_isim_beh.exe
+Fuse Memory Usage: 33264 KB
+Fuse CPU Usage: 1124 ms

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 194: &lt;<arg fmt="%s" index="1">_D_syscall</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 195: &lt;<arg fmt="%s" index="1">_D_ri</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 196: &lt;<arg fmt="%s" index="1">_D_BD</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 197: &lt;<arg fmt="%s" index="1">_D_reg_exc_code</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 333: &lt;<arg fmt="%s" index="1">_E_BD</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 334: &lt;<arg fmt="%s" index="1">_E_reg_exc_code</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 336: &lt;<arg fmt="%s" index="1">_E_overflow</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 337: &lt;<arg fmt="%s" index="1">_E_load</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 338: &lt;<arg fmt="%s" index="1">_E_store</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 339: &lt;<arg fmt="%s" index="1">_E_add_addi_sub</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 369: &lt;<arg fmt="%s" index="1">Req</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 427: &lt;<arg fmt="%s" index="1">_M_reg_exc_code</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 428: &lt;<arg fmt="%s" index="1">_M_exc_code</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 429: &lt;<arg fmt="%s" index="1">_M_BD</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 452: &lt;<arg fmt="%s" index="1">_W_PC</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 457: &lt;<arg fmt="%s" index="1">_W_reg_write_enable</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 460: &lt;<arg fmt="%s" index="1">_W_reg_write_address</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 461: &lt;<arg fmt="%s" index="1">_W_reg_write_data</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 53: &lt;<arg fmt="%s" index="1">cpu_m_data_addr</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 54: &lt;<arg fmt="%s" index="1">cpu_m_data_wdata</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 56: &lt;<arg fmt="%s" index="1">cpu_m_data_byteen</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 73: &lt;<arg fmt="%s" index="1">bridge_m_data_rdata</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 82: &lt;<arg fmt="%s" index="1">Timer0WE</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 83: &lt;<arg fmt="%s" index="1">Timer1WE</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 85: &lt;<arg fmt="%s" index="1">timer0data</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 86: &lt;<arg fmt="%s" index="1">timer1data</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="35" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 91: &lt;<arg fmt="%s" index="1">HWInt</arg>&gt; is already implicitly declared earlier.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 155: Port <arg fmt="%s" index="1">eret_flush</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 278: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">reg_write_enable_in</arg>&gt;. Formal port size is <arg fmt="%d" index="2">1</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_E.v" Line 78: Port <arg fmt="%s" index="1">eret</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_M.v" Line 67: Port <arg fmt="%s" index="1">mult</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_W.v" Line 58: Port <arg fmt="%s" index="1">mult</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 78: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">O_m_data_byteen</arg>&gt;. Formal port size is <arg fmt="%d" index="2">5</arg>-bit while actual signal size is <arg fmt="%d" index="1">4</arg>-bit.
+</msg>
+
+</messages>
+

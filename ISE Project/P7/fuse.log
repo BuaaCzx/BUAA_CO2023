@@ -1,0 +1,92 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Hihiczx/Documents/ISE Project/P7/mips_txt_isim_beh.exe -prj C:/Users/Hihiczx/Documents/ISE Project/P7/mips_txt_beh.prj work.mips_txt work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnitDecode.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/Register_W.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/Register_M.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/Register_E.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/RegisterD.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ProgramCounter.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/MultDiv.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/GRF.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/CP0.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_W.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_M.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_E.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_D.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/CMP.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ByteExtendForStore.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ByteExtendForLoad.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/ALU.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/P7_standard_timer_2019.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" into library work
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 194: <_D_syscall> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 195: <_D_ri> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 196: <_D_BD> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 197: <_D_reg_exc_code> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 333: <_E_BD> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 334: <_E_reg_exc_code> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 336: <_E_overflow> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 337: <_E_load> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 338: <_E_store> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 339: <_E_add_addi_sub> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 369: <Req> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 427: <_M_reg_exc_code> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 428: <_M_exc_code> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 429: <_M_BD> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 452: <_W_PC> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 457: <_W_reg_write_enable> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 460: <_W_reg_write_address> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 461: <_W_reg_write_data> is already implicitly declared earlier.
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/Bridge.v" into library work
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" into library work
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 53: <cpu_m_data_addr> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 54: <cpu_m_data_wdata> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 56: <cpu_m_data_byteen> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 73: <bridge_m_data_rdata> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 82: <Timer0WE> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 83: <Timer1WE> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 85: <timer0data> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 86: <timer1data> is already implicitly declared earlier.
+WARNING:HDLCompiler:35 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 91: <HWInt> is already implicitly declared earlier.
+Analyzing Verilog file "C:/Users/Hihiczx/Documents/ISE Project/P7/mipsTest.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 155: Port eret_flush is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/Hihiczx/Documents/ISE Project/P7/CPU.v" Line 278: Size mismatch in connection of port <reg_write_enable_in>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:1016 - "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_E.v" Line 78: Port eret is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_M.v" Line 67: Port mult is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:/Users/Hihiczx/Documents/ISE Project/P7/ControlUnit_W.v" Line 58: Port mult is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/Hihiczx/Documents/ISE Project/P7/mips.v" Line 78: Size mismatch in connection of port <O_m_data_byteen>. Formal port size is 5-bit while actual signal size is 4-bit.
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module Register_D
+Compiling module ControlUnitDecode
+Compiling module ControlUnit_D
+Compiling module GRF
+Compiling module CMP
+Compiling module Register_E
+Compiling module ControlUnit_E
+Compiling module ALU
+Compiling module MultDiv
+Compiling module Register_M
+Compiling module ControlUnit_M
+Compiling module ByteExtendForStore
+Compiling module ByteExtendForLoad
+Compiling module CP0
+Compiling module Register_W
+Compiling module ControlUnit_W
+Compiling module CPU
+Compiling module Bridge
+Compiling module TC
+Compiling module mips
+Compiling module mips_txt
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable C:/Users/Hihiczx/Documents/ISE Project/P7/mips_txt_isim_beh.exe
+Fuse Memory Usage: 36096 KB
+Fuse CPU Usage: 890 ms
